@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import InputCustom from './InputCustom';
+import SelectCustom from './SelectCustom';
 
 function App() {
   return (
     <div className="App">
-      <body>
-    <div class="container">
+       <div class="container">
       <div>
         <div class="header">
           <h1>Student Registeration Form</h1>
@@ -15,29 +16,15 @@ function App() {
         <form action="" class="bieumau">
           <div>
             Firstname<br />
-            <input
-              type="text"
-              class="ten"
-              name="Firstname"
-              placeholder="firstname"
-            />
-            <br /><br />
-            Middlename:<br />
-            <input
-              type="text"
-              class="tendem"
-              name="Middlename"
-              placeholder="middlename"
-            />
+           <InputCustom type={'text'} name={'FistName'} placeholder="FirstName"/>
             <br /><br />
             Lastname:<br />
-            <input
-              type="text"
-              class="ho"
-              name="Lastname"
-              placeholder="lastname"
-            />
+            <InputCustom type={'text'} name={'Lastname'} placeholder="Lastnamee"/>
             <br />
+            Middlename:<br />
+            <InputCustom type={'text'} name={'Middlenamee'} placeholder="Middlename"/>
+            <br /><br />
+           
           </div>
           <div class="khoahoc">
             <label for="lang-select">Course:</label>
@@ -59,7 +46,7 @@ function App() {
             <label for="phone">Phone:</label><br />
             <input type="tel" class="sdt" name="phone" placeholder="+91" />
             <br />
-            <input type="text" class="sdt1" placeholder="phone no" />
+            <input type="text" class="sdt1" placeholder="Phone No" />
             <br /><br />
             Current Address:<br />
             <textarea
@@ -91,7 +78,6 @@ function App() {
         </form>
       </div>
     </div>
-  </body>
     </div>
   );
 }
